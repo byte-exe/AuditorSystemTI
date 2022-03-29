@@ -1,0 +1,12 @@
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\bin\Debug\AuditTatakelolaSI.exe
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\bin\Debug\AuditTatakelolaSI.pdb
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\bin\Debug\AuditTatakelolaSI.xml
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.login.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.Resources.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.vbproj.GenerateResource.Cache
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.exe
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.xml
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.pdb
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.FormMenu.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.information.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.PO9.resources
