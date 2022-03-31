@@ -1,11 +1,11 @@
 ﻿Imports System.Math
-Public Class PO9
+Public Class DS5
 
-    Dim a1, a2, a3, a4, a5, a6, a7, a8 As Integer
-    Dim b1, b2, b3, b4, b5, b6, b7, b8 As Integer
-    Dim c1, c2, c3, c4, c5, c6, c7, c8 As Integer
-    Dim d1, d2, d3, d4, d5, d6, d7, d8 As Integer
-    Dim e1, e2, e3, e4, e5, e6, e7, e8 As Integer
+    Dim a1, a2, a3, a4, a5, a6, a7, a8, a9, a10 As Integer
+    Dim b1, b2, b3, b4, b5, b6, b7, b8, b9, b10 As Integer
+    Dim c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 As Integer
+    Dim d1, d2, d3, d4, d5, d6, d7, d8, d9, d10 As Integer
+    Dim e1, e2, e3, e4, e5, e6, e7, e8, e9, e10 As Integer
 
     Dim total_a As Integer
     Dim total_b As Integer
@@ -47,14 +47,18 @@ Public Class PO9
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        information.Show()
+        AI2.Show()
         Me.Close()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        AI2.indexPO9.Text = indexPO9.Text
-        AI2.jumlah_po9.Text = jumlah_po9.Text
-        AI2.Show()
+        RID.jumlah_po9.Text = jumlah_po9.Text
+        RID.indexPO9.Text = indexPO9.Text
+        RID.jumlah_ai2.Text = jumlah_ai2.Text
+        RID.indexAI2.Text = indexAI2.Text
+        RID.jumlah_ds5.Text = jumlah_ds5.Text
+        RID.indexDS5.Text = indexDS5.Text
+        RID.Show()
         Me.Close()
     End Sub
 
@@ -67,7 +71,7 @@ Public Class PO9
     End Sub
 
     Private Sub TextBox1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles TextBox1.MouseMove
-        total_a = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8
+        total_a = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10
         TextBox1.Text = total_a
     End Sub
 
@@ -132,7 +136,7 @@ Public Class PO9
     End Sub
 
     Private Sub TextBox2_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles TextBox2.MouseMove
-        total_b = b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8
+        total_b = b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8 + b9 + b10
         TextBox2.Text = total_b
     End Sub
 
@@ -270,7 +274,7 @@ Public Class PO9
     End Sub
 
     Private Sub TextBox3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox3.MouseLeave
-        total_c = c1 + c2 + c3 + c4 + c5 + c6 + c7 + c8
+        total_c = c1 + c2 + c3 + c4 + c5 + c6 + c7 + c8 + c9 + c10
         TextBox3.Text = total_c
     End Sub
 
@@ -295,7 +299,7 @@ Public Class PO9
     End Sub
 
     Private Sub TextBox4_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox4.MouseLeave
-        total_d = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8
+        total_d = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10
         TextBox4.Text = total_d
     End Sub
 
@@ -416,7 +420,7 @@ Public Class PO9
     End Sub
 
     Private Sub TextBox5_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox5.MouseLeave
-        total_e = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8
+        total_e = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8 + e9 + e10
         TextBox5.Text = total_e
     End Sub
 
@@ -436,22 +440,22 @@ Public Class PO9
 
     End Sub
 
-    Private Sub TextBox7_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles jumlah_po9.MouseLeave
+    Private Sub TextBox7_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles jumlah_ds5.MouseLeave
         total_jawaban = total_a + total_b + total_c + total_d + total_e
-        jumlah_po9.Text = total_jawaban
+        jumlah_ds5.Text = total_jawaban
 
     End Sub
 
-    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_po9.TextChanged
+    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_ds5.TextChanged
 
     End Sub
 
-    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexPO9.MouseLeave
-        index = total_jawaban / 8
-        indexPO9.Text = Round(Val(index), 2)
+    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexDS5.MouseLeave
+        index = total_jawaban / 10
+        indexDS5.Text = Round(Val(index), 2)
     End Sub
 
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles indexPO9.TextChanged
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles indexDS5.TextChanged
 
     End Sub
 
@@ -477,5 +481,85 @@ Public Class PO9
 
     Private Sub Panel5_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel5.Paint
 
+    End Sub
+
+    Private Sub SS_9_5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SS_9_5.CheckedChanged
+        If SS_9_5.Checked Then
+            a9 = 5
+        Else
+            a9 = 0
+        End If
+    End Sub
+
+    Private Sub SS_10_5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SS_10_5.CheckedChanged
+        If SS_10_5.Checked Then
+            a10 = 5
+        Else
+            a10 = 0
+        End If
+    End Sub
+
+    Private Sub S_9_4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles S_9_4.CheckedChanged
+        If S_9_4.Checked Then
+            b9 = 4
+        Else
+            b9 = 0
+        End If
+    End Sub
+
+    Private Sub S_10_4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles S_10_4.CheckedChanged
+        If S_10_4.Checked Then
+            b10 = 4
+        Else
+            b10 = 0
+        End If
+    End Sub
+
+    Private Sub KS_9_3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KS_9_3.CheckedChanged
+        If KS_9_3.Checked Then
+            c9 = 3
+        Else
+            c9 = 0
+        End If
+    End Sub
+
+    Private Sub KS_10_3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KS_10_3.CheckedChanged
+        If KS_10_3.Checked Then
+            c10 = 3
+        Else
+            c10 = 0
+        End If
+    End Sub
+
+    Private Sub TS_9_2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TS_9_2.CheckedChanged
+        If TS_9_2.Checked Then
+            d9 = 2
+        Else
+            d9 = 0
+        End If
+    End Sub
+
+    Private Sub TS_10_2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TS_10_2.CheckedChanged
+        If TS_10_2.Checked Then
+            d10 = 2
+        Else
+            d10 = 0
+        End If
+    End Sub
+
+    Private Sub STS_9_1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles STS_9_1.CheckedChanged
+        If STS_9_1.Checked Then
+            e9 = 1
+        Else
+            e9 = 0
+        End If
+    End Sub
+
+    Private Sub STS_10_1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles STS_10_1.CheckedChanged
+        If STS_10_1.Checked Then
+            e10 = 1
+        Else
+            e10 = 0
+        End If
     End Sub
 End Class

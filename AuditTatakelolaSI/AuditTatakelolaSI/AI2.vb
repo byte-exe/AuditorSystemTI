@@ -1,5 +1,5 @@
 ﻿Imports System.Math
-Public Class PO9
+Public Class AI2
 
     Dim a1, a2, a3, a4, a5, a6, a7, a8 As Integer
     Dim b1, b2, b3, b4, b5, b6, b7, b8 As Integer
@@ -18,11 +18,11 @@ Public Class PO9
 
 
 
-    Private Sub Label15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label15.Click
+    Private Sub Label15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SS_1_5.CheckedChanged
+    Private Sub CheckBox1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If SS_1_5.Checked Then
             a1 = 5
         Else
@@ -30,31 +30,31 @@ Public Class PO9
         End If
     End Sub
 
-    Private Sub Label11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label11.Click
+    Private Sub Label11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub Label13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label13.Click
+    Private Sub Label13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub Label21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label21.Click
+    Private Sub Label21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub Label26_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label26.Click
-
-    End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        information.Show()
+        PO9.Show()
         Me.Close()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        AI2.indexPO9.Text = indexPO9.Text
-        AI2.jumlah_po9.Text = jumlah_po9.Text
-        AI2.Show()
+        DS5.jumlah_po9.Text = jumlah_po9.Text
+        DS5.indexPO9.Text = indexPO9.Text
+        DS5.jumlah_ai2.Text = jumlah_ai2.Text
+        DS5.indexAI2.Text = indexAI2.Text
+
+        DS5.Show()
         Me.Close()
     End Sub
 
@@ -115,13 +115,7 @@ Public Class PO9
         End If
     End Sub
 
-    Private Sub P_8_5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SS_8_5.CheckedChanged
-        If SS_8_5.Checked Then
-            a8 = 5
-        Else
-            a8 = 0
-        End If
-    End Sub
+
 
     Private Sub P_1_4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles S_1_4.CheckedChanged
         If S_1_4.Checked Then
@@ -189,13 +183,7 @@ Public Class PO9
         End If
     End Sub
 
-    Private Sub P_8_4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles S_8_4.CheckedChanged
-        If S_8_4.Checked Then
-            b8 = 4
-        Else
-            b8 = 0
-        End If
-    End Sub
+
 
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
 
@@ -261,13 +249,7 @@ Public Class PO9
         End If
     End Sub
 
-    Private Sub P_8_3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KS_8_3.CheckedChanged
-        If KS_8_3.Checked Then
-            c8 = 3
-        Else
-            c8 = 0
-        End If
-    End Sub
+
 
     Private Sub TextBox3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox3.MouseLeave
         total_c = c1 + c2 + c3 + c4 + c5 + c6 + c7 + c8
@@ -343,13 +325,7 @@ Public Class PO9
         End If
     End Sub
 
-    Private Sub TS_8_2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TS_8_2.CheckedChanged
-        If TS_8_2.Checked Then
-            d8 = 2
-        Else
-            d8 = 0
-        End If
-    End Sub
+
 
     Private Sub STS_1_1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles STS_1_1.CheckedChanged
         If STS_1_1.Checked Then
@@ -407,13 +383,7 @@ Public Class PO9
         End If
     End Sub
 
-    Private Sub STS_8_1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles STS_8_1.CheckedChanged
-        If STS_8_1.Checked Then
-            e8 = 1
-        Else
-            e8 = 0
-        End If
-    End Sub
+
 
     Private Sub TextBox5_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox5.MouseLeave
         total_e = e1 + e2 + e3 + e4 + e5 + e6 + e7 + e8
@@ -436,22 +406,22 @@ Public Class PO9
 
     End Sub
 
-    Private Sub TextBox7_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles jumlah_po9.MouseLeave
+    Private Sub TextBox7_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles jumlah_ai2.MouseLeave
         total_jawaban = total_a + total_b + total_c + total_d + total_e
-        jumlah_po9.Text = total_jawaban
+        jumlah_ai2.Text = total_jawaban
 
     End Sub
 
-    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_po9.TextChanged
+    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_ai2.TextChanged
 
     End Sub
 
-    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexPO9.MouseLeave
-        index = total_jawaban / 8
-        indexPO9.Text = Round(Val(index), 2)
+    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexAI2.MouseLeave
+        index = total_jawaban / 7
+        indexAI2.Text = Round(Val(index), 2)
     End Sub
 
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles indexPO9.TextChanged
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles indexAI2.TextChanged
 
     End Sub
 
@@ -475,7 +445,16 @@ Public Class PO9
 
     End Sub
 
-    Private Sub Panel5_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel5.Paint
+    Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        PO9.Show()
+        Me.Close()
+    End Sub
 
+    Private Sub SS_1_5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SS_1_5.CheckedChanged
+        If SS_1_5.Checked Then
+            a1 = 5
+        Else
+            a1 = 0
+        End If
     End Sub
 End Class

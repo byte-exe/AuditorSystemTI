@@ -29,10 +29,12 @@ Partial Class FormMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +53,7 @@ Partial Class FormMenu
         '
         Me.Button2.BackColor = System.Drawing.Color.Lime
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(47, 195)
+        Me.Button2.Location = New System.Drawing.Point(47, 264)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(378, 78)
         Me.Button2.TabIndex = 1
@@ -74,7 +76,7 @@ Partial Class FormMenu
         Me.Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel1.Location = New System.Drawing.Point(447, 19)
+        Me.Panel1.Location = New System.Drawing.Point(474, 81)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(466, 513)
         Me.Panel1.TabIndex = 3
@@ -82,17 +84,38 @@ Partial Class FormMenu
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(51, 322)
+        Me.Panel2.Location = New System.Drawing.Point(474, 35)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(373, 84)
+        Me.Panel2.Size = New System.Drawing.Size(268, 40)
         Me.Panel2.TabIndex = 4
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(197, 7)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 25)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "WIB"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(11, 7)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(73, 25)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Waktu"
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(30, 41)
+        Me.TextBox1.Location = New System.Drawing.Point(90, 6)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(101, 29)
         Me.TextBox1.TabIndex = 0
@@ -100,16 +123,6 @@ Partial Class FormMenu
         'Timer1
         '
         Me.Timer1.Enabled = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(25, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 25)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Waktu"
         '
         'Button3
         '
@@ -123,12 +136,24 @@ Partial Class FormMenu
         Me.Button3.Text = "LOG OUT"
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Salmon
+        Me.Button4.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(47, 180)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(378, 78)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "INPUT DATA RESPONDEN"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
         'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(935, 556)
+        Me.ClientSize = New System.Drawing.Size(965, 606)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -153,4 +178,6 @@ Partial Class FormMenu
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

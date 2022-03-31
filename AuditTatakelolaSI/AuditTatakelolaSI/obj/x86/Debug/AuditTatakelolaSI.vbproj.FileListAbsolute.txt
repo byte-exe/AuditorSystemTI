@@ -10,3 +10,7 @@ D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\De
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.FormMenu.resources
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.information.resources
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.PO9.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.AI2.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.DS5.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.RID.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.responden.resources

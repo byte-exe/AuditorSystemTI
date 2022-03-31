@@ -74,6 +74,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI2.Designer.vb">
+      <DependentUpon>AI2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AI2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS5.Designer.vb">
+      <DependentUpon>DS5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DS5.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMenu.Designer.vb">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </Compile>
@@ -93,6 +105,7 @@
       <DependentUpon>login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModuleKoneksiMySQL.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -114,8 +127,26 @@
     <Compile Include="PO9.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="responden.Designer.vb">
+      <DependentUpon>responden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="responden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RID.Designer.vb">
+      <DependentUpon>RID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RID.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AI2.resx">
+      <DependentUpon>AI2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DS5.resx">
+      <DependentUpon>DS5.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PO9.resx">
       <DependentUpon>PO9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="responden.resx">
+      <DependentUpon>responden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RID.resx">
+      <DependentUpon>RID.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
