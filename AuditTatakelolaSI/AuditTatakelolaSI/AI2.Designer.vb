@@ -85,6 +85,8 @@ Partial Class AI2
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.jumlah_po9 = New System.Windows.Forms.TextBox()
+        Me.indexPO9 = New System.Windows.Forms.TextBox()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.jumlah_ai2 = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
@@ -109,8 +111,6 @@ Partial Class AI2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.indexPO9 = New System.Windows.Forms.TextBox()
-        Me.jumlah_po9 = New System.Windows.Forms.TextBox()
         Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -762,7 +762,7 @@ Partial Class AI2
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.Teal
         Me.Panel1.Controls.Add(Me.jumlah_po9)
         Me.Panel1.Controls.Add(Me.indexPO9)
         Me.Panel1.Controls.Add(Me.Panel15)
@@ -785,6 +785,26 @@ Partial Class AI2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1230, 596)
         Me.Panel1.TabIndex = 1
+        '
+        'jumlah_po9
+        '
+        Me.jumlah_po9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.jumlah_po9.Location = New System.Drawing.Point(683, 475)
+        Me.jumlah_po9.Name = "jumlah_po9"
+        Me.jumlah_po9.Size = New System.Drawing.Size(64, 29)
+        Me.jumlah_po9.TabIndex = 18
+        Me.jumlah_po9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.jumlah_po9.Visible = False
+        '
+        'indexPO9
+        '
+        Me.indexPO9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.indexPO9.Location = New System.Drawing.Point(776, 475)
+        Me.indexPO9.Name = "indexPO9"
+        Me.indexPO9.Size = New System.Drawing.Size(64, 29)
+        Me.indexPO9.TabIndex = 17
+        Me.indexPO9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.indexPO9.Visible = False
         '
         'Panel14
         '
@@ -1032,24 +1052,6 @@ Partial Class AI2
         Me.Label1.Size = New System.Drawing.Size(1082, 40)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Acquire and Implement 2 (Acquire and Maintain Application Software)"
-        '
-        'indexPO9
-        '
-        Me.indexPO9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.indexPO9.Location = New System.Drawing.Point(776, 475)
-        Me.indexPO9.Name = "indexPO9"
-        Me.indexPO9.Size = New System.Drawing.Size(64, 29)
-        Me.indexPO9.TabIndex = 17
-        Me.indexPO9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'jumlah_po9
-        '
-        Me.jumlah_po9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.jumlah_po9.Location = New System.Drawing.Point(683, 475)
-        Me.jumlah_po9.Name = "jumlah_po9"
-        Me.jumlah_po9.Size = New System.Drawing.Size(64, 29)
-        Me.jumlah_po9.TabIndex = 18
-        Me.jumlah_po9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'AI2
         '

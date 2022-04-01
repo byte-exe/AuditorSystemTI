@@ -410,22 +410,9 @@ Public Class AI2
         total_jawaban = total_a + total_b + total_c + total_d + total_e
         jumlah_ai2.Text = total_jawaban
 
-    End Sub
-
-    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_ai2.TextChanged
-
-    End Sub
-
-    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexAI2.MouseLeave
         index = total_jawaban / 7
         indexAI2.Text = Round(Val(index), 2)
-    End Sub
 
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles indexAI2.TextChanged
-
-    End Sub
-
-    Private Sub TextBox8_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox8.MouseLeave
         If index <= 0.49 Then
             TextBox8.Text = "Non Existent"
         ElseIf index <= 1.49 Then
@@ -441,6 +428,13 @@ Public Class AI2
         End If
     End Sub
 
+    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_ai2.TextChanged
+
+    End Sub
+
+    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexAI2.MouseLeave
+
+    End Sub
     Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
     End Sub

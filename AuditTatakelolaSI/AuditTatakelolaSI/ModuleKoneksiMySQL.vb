@@ -7,7 +7,7 @@ Module ModuleKoneksiMySQL
     Public ds As DataSet
     Public str As String
 
-    Sub koneksi()
+    Sub koneksi_db()
 
         Try
 

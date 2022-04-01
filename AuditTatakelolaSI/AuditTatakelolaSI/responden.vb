@@ -28,7 +28,6 @@ Public Class responden
         End With
     End Sub
     Sub bersih()
-        TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
 
@@ -43,9 +42,28 @@ Public Class responden
         DataGridView1.DataSource = datatabel.Tables("responden")
     End Sub
 
+    Sub autoNumber()
+        TextBox1.Enabled = False
+        Call koneksi_db()
+        Dim strSementara As String = ""
+        Dim strIsi As String = ""
+        Dim str As String
+        str = "SELECT * From responden ORDER BY kode_responden desc"
+        cmd = New MySqlCommand(str, conn)
+        rd = cmd.ExecuteReader
+        If rd.Read Then
+            strSementara = Mid(rd.Item("kode_responden"), 2, 2)
+            strIsi = Val(strSementara) + 1
+            TextBox1.Text = "R" + Mid("0", 1, 2 - strIsi.Length) & strIsi
+        Else
+            TextBox1.Text = "R01"
+        End If
+    End Sub
+
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         koneksi2()
         tampilkan()
+        autoNumber()
     End Sub
 
     Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
@@ -58,6 +76,7 @@ Public Class responden
         MsgBox("data berhasil disimpan")
         tampilkan()
         bersih()
+        autoNumber()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
@@ -77,7 +96,7 @@ Public Class responden
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         If MessageBox.Show("apakah data yakin dihapus", "Pesan", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-            Dim HAPUS As String = "DELETE from kode_responden WHERE kode_responden='" & TextBox1.Text & "'"
+            Dim HAPUS As String = "DELETE from responden WHERE kode_responden='" & TextBox1.Text & "'"
             perintah(HAPUS)
         Else
             bersih()
@@ -96,6 +115,30 @@ Public Class responden
     End Sub
 
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
 
     End Sub
 End Class

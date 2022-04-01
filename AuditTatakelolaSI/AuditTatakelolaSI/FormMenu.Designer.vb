@@ -87,16 +87,16 @@ Partial Class FormMenu
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Location = New System.Drawing.Point(474, 35)
+        Me.Panel2.Location = New System.Drawing.Point(611, 96)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(268, 40)
+        Me.Panel2.Size = New System.Drawing.Size(239, 52)
         Me.Panel2.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(197, 7)
+        Me.Label3.Location = New System.Drawing.Point(185, 11)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(51, 25)
         Me.Label3.TabIndex = 2
@@ -106,7 +106,7 @@ Partial Class FormMenu
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(11, 7)
+        Me.Label2.Location = New System.Drawing.Point(7, 12)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(73, 25)
         Me.Label2.TabIndex = 1
@@ -115,7 +115,7 @@ Partial Class FormMenu
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(90, 6)
+        Me.TextBox1.Location = New System.Drawing.Point(81, 10)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(101, 29)
         Me.TextBox1.TabIndex = 0
@@ -151,7 +151,7 @@ Partial Class FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(965, 606)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)

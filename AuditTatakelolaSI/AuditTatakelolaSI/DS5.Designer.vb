@@ -85,6 +85,10 @@ Partial Class DS5
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.indexAI2 = New System.Windows.Forms.TextBox()
+        Me.indexPO9 = New System.Windows.Forms.TextBox()
+        Me.jumlah_ai2 = New System.Windows.Forms.TextBox()
+        Me.jumlah_po9 = New System.Windows.Forms.TextBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.STS_10_1 = New System.Windows.Forms.CheckBox()
         Me.TS_10_2 = New System.Windows.Forms.CheckBox()
@@ -133,10 +137,6 @@ Partial Class DS5
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.jumlah_po9 = New System.Windows.Forms.TextBox()
-        Me.jumlah_ai2 = New System.Windows.Forms.TextBox()
-        Me.indexAI2 = New System.Windows.Forms.TextBox()
-        Me.indexPO9 = New System.Windows.Forms.TextBox()
         Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -788,7 +788,7 @@ Partial Class DS5
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.Teal
         Me.Panel1.Controls.Add(Me.indexAI2)
         Me.Panel1.Controls.Add(Me.indexPO9)
         Me.Panel1.Controls.Add(Me.jumlah_ai2)
@@ -816,6 +816,46 @@ Partial Class DS5
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1254, 685)
         Me.Panel1.TabIndex = 1
+        '
+        'indexAI2
+        '
+        Me.indexAI2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.indexAI2.Location = New System.Drawing.Point(781, 622)
+        Me.indexAI2.Name = "indexAI2"
+        Me.indexAI2.Size = New System.Drawing.Size(39, 29)
+        Me.indexAI2.TabIndex = 22
+        Me.indexAI2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.indexAI2.Visible = False
+        '
+        'indexPO9
+        '
+        Me.indexPO9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.indexPO9.Location = New System.Drawing.Point(781, 588)
+        Me.indexPO9.Name = "indexPO9"
+        Me.indexPO9.Size = New System.Drawing.Size(39, 29)
+        Me.indexPO9.TabIndex = 21
+        Me.indexPO9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.indexPO9.Visible = False
+        '
+        'jumlah_ai2
+        '
+        Me.jumlah_ai2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.jumlah_ai2.Location = New System.Drawing.Point(716, 622)
+        Me.jumlah_ai2.Name = "jumlah_ai2"
+        Me.jumlah_ai2.Size = New System.Drawing.Size(39, 29)
+        Me.jumlah_ai2.TabIndex = 20
+        Me.jumlah_ai2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.jumlah_ai2.Visible = False
+        '
+        'jumlah_po9
+        '
+        Me.jumlah_po9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.jumlah_po9.Location = New System.Drawing.Point(716, 588)
+        Me.jumlah_po9.Name = "jumlah_po9"
+        Me.jumlah_po9.Size = New System.Drawing.Size(39, 29)
+        Me.jumlah_po9.TabIndex = 19
+        Me.jumlah_po9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.jumlah_po9.Visible = False
         '
         'Panel17
         '
@@ -1305,46 +1345,11 @@ Partial Class DS5
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Deliver and Support 5 (Ensure System Security)"
         '
-        'jumlah_po9
-        '
-        Me.jumlah_po9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.jumlah_po9.Location = New System.Drawing.Point(716, 588)
-        Me.jumlah_po9.Name = "jumlah_po9"
-        Me.jumlah_po9.Size = New System.Drawing.Size(39, 29)
-        Me.jumlah_po9.TabIndex = 19
-        Me.jumlah_po9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'jumlah_ai2
-        '
-        Me.jumlah_ai2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.jumlah_ai2.Location = New System.Drawing.Point(716, 622)
-        Me.jumlah_ai2.Name = "jumlah_ai2"
-        Me.jumlah_ai2.Size = New System.Drawing.Size(39, 29)
-        Me.jumlah_ai2.TabIndex = 20
-        Me.jumlah_ai2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'indexAI2
-        '
-        Me.indexAI2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.indexAI2.Location = New System.Drawing.Point(781, 622)
-        Me.indexAI2.Name = "indexAI2"
-        Me.indexAI2.Size = New System.Drawing.Size(39, 29)
-        Me.indexAI2.TabIndex = 22
-        Me.indexAI2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'indexPO9
-        '
-        Me.indexPO9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.indexPO9.Location = New System.Drawing.Point(781, 588)
-        Me.indexPO9.Name = "indexPO9"
-        Me.indexPO9.Size = New System.Drawing.Size(39, 29)
-        Me.indexPO9.TabIndex = 21
-        Me.indexPO9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'DS5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(1253, 683)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "DS5"

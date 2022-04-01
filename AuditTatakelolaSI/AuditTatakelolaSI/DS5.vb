@@ -444,22 +444,9 @@ Public Class DS5
         total_jawaban = total_a + total_b + total_c + total_d + total_e
         jumlah_ds5.Text = total_jawaban
 
-    End Sub
-
-    Private Sub TextBox7_TextChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles jumlah_ds5.TextChanged
-
-    End Sub
-
-    Private Sub TextBox6_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles indexDS5.MouseLeave
         index = total_jawaban / 10
         indexDS5.Text = Round(Val(index), 2)
-    End Sub
 
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles indexDS5.TextChanged
-
-    End Sub
-
-    Private Sub TextBox8_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox8.MouseLeave
         If index <= 0.49 Then
             TextBox8.Text = "Non Existent"
         ElseIf index <= 1.49 Then
@@ -473,15 +460,10 @@ Public Class DS5
         ElseIf index <= 5.0 Then
             TextBox8.Text = "Optimized"
         End If
-    End Sub
-
-    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
 
     End Sub
 
-    Private Sub Panel5_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel5.Paint
-
-    End Sub
+   
 
     Private Sub SS_9_5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SS_9_5.CheckedChanged
         If SS_9_5.Checked Then

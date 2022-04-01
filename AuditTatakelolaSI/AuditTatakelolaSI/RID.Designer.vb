@@ -39,8 +39,8 @@ Partial Class RID
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.total = New System.Windows.Forms.TextBox()
+        Me.maturity_level = New System.Windows.Forms.TextBox()
+        Me.rata_index = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -57,6 +57,12 @@ Partial Class RID
         Me.indexPO9 = New System.Windows.Forms.TextBox()
         Me.indexAI2 = New System.Windows.Forms.TextBox()
         Me.indexDS5 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -64,6 +70,7 @@ Partial Class RID
         'ComboBox1
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormatString = "yyyy-MM-dd"
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(727, 97)
         Me.ComboBox1.Name = "ComboBox1"
@@ -90,7 +97,7 @@ Partial Class RID
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(231, 97)
+        Me.TextBox1.Location = New System.Drawing.Point(231, 95)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(242, 22)
         Me.TextBox1.TabIndex = 15
@@ -157,7 +164,7 @@ Partial Class RID
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Location = New System.Drawing.Point(11, 178)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1049, 44)
+        Me.Panel1.Size = New System.Drawing.Size(1067, 44)
         Me.Panel1.TabIndex = 19
         '
         'Label11
@@ -223,31 +230,31 @@ Partial Class RID
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel2.Controls.Add(Me.TextBox6)
-        Me.Panel2.Controls.Add(Me.total)
+        Me.Panel2.Controls.Add(Me.maturity_level)
+        Me.Panel2.Controls.Add(Me.rata_index)
         Me.Panel2.Controls.Add(Me.Label15)
         Me.Panel2.Location = New System.Drawing.Point(11, 365)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1049, 44)
+        Me.Panel2.Size = New System.Drawing.Size(1067, 44)
         Me.Panel2.TabIndex = 20
         '
-        'TextBox6
+        'maturity_level
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(821, 9)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(205, 26)
-        Me.TextBox6.TabIndex = 34
-        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.maturity_level.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.maturity_level.Location = New System.Drawing.Point(821, 9)
+        Me.maturity_level.Name = "maturity_level"
+        Me.maturity_level.Size = New System.Drawing.Size(226, 26)
+        Me.maturity_level.TabIndex = 34
+        Me.maturity_level.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'total
+        'rata_index
         '
-        Me.total.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.total.Location = New System.Drawing.Point(641, 11)
-        Me.total.Name = "total"
-        Me.total.Size = New System.Drawing.Size(90, 26)
-        Me.total.TabIndex = 33
-        Me.total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.rata_index.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rata_index.Location = New System.Drawing.Point(641, 11)
+        Me.rata_index.Name = "rata_index"
+        Me.rata_index.Size = New System.Drawing.Size(90, 26)
+        Me.rata_index.TabIndex = 33
+        Me.rata_index.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
         '
@@ -403,11 +410,78 @@ Partial Class RID
         Me.indexDS5.TabIndex = 35
         Me.indexDS5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(124, 452)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(792, 22)
+        Me.Label12.TabIndex = 36
+        Me.Label12.Text = "Untuk Posisi level maturity system pada Sistem Informasi Dinas Perhubungan berada" & _
+            " pada level"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(17, 489)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(832, 22)
+        Me.Label13.TabIndex = 37
+        Me.Label13.Text = "Artinya Sistem Informasi Sistem Informasi Dinas Perhubungan Pasaman Barat berada " & _
+            "pada Tingkat"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox6.Location = New System.Drawing.Point(922, 450)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(147, 26)
+        Me.TextBox6.TabIndex = 38
+        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox7.Location = New System.Drawing.Point(855, 489)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(214, 26)
+        Me.TextBox7.TabIndex = 39
+        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(855, 532)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(214, 43)
+        Me.Button1.TabIndex = 40
+        Me.Button1.Text = "SIMPAN"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(21, 532)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(214, 43)
+        Me.Button2.TabIndex = 41
+        Me.Button2.Text = "Menu"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'RID
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1072, 688)
+        Me.BackColor = System.Drawing.Color.Teal
+        Me.ClientSize = New System.Drawing.Size(1098, 636)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.indexDS5)
         Me.Controls.Add(Me.indexAI2)
         Me.Controls.Add(Me.indexPO9)
@@ -469,8 +543,8 @@ Partial Class RID
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents Label23 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents total As System.Windows.Forms.TextBox
+    Friend WithEvents maturity_level As System.Windows.Forms.TextBox
+    Friend WithEvents rata_index As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
@@ -480,4 +554,10 @@ Partial Class RID
     Friend WithEvents indexPO9 As System.Windows.Forms.TextBox
     Friend WithEvents indexAI2 As System.Windows.Forms.TextBox
     Friend WithEvents indexDS5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

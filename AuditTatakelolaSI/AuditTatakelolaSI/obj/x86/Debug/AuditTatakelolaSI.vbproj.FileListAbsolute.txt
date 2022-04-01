@@ -14,3 +14,4 @@ D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\De
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.DS5.resources
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.RID.resources
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.responden.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.laporan.resources

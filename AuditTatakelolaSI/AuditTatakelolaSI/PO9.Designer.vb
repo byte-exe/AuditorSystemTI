@@ -139,7 +139,7 @@ Partial Class PO9
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Panel1.BackColor = System.Drawing.Color.Teal
         Me.Panel1.Controls.Add(Me.Panel15)
         Me.Panel1.Controls.Add(Me.Panel14)
         Me.Panel1.Controls.Add(Me.Panel13)
