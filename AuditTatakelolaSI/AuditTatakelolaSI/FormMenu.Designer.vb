@@ -46,7 +46,7 @@ Partial Class FormMenu
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(378, 78)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "PROSES AUDIT"
+        Me.Button1.Text = "ANALISA TATAKELOLA"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -57,17 +57,17 @@ Partial Class FormMenu
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(378, 78)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "LAPORAN AUDIT"
+        Me.Button2.Text = "LAPORAN ANALISA"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(50, 19)
+        Me.Label1.Location = New System.Drawing.Point(160, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 42)
+        Me.Label1.Size = New System.Drawing.Size(171, 55)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "MENU"
         '
@@ -129,7 +129,7 @@ Partial Class FormMenu
         Me.Button3.BackColor = System.Drawing.Color.DarkRed
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button3.Location = New System.Drawing.Point(51, 478)
+        Me.Button3.Location = New System.Drawing.Point(47, 540)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(378, 54)
         Me.Button3.TabIndex = 5

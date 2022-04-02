@@ -443,17 +443,17 @@ Public Class PO9
         index = total_jawaban / 8
         indexPO9.Text = Round(Val(index), 2)
 
-        If index <= 0.49 Then
+        If index <= 0.5 Then
             TextBox8.Text = "Non Existent"
-        ElseIf index <= 1.49 Then
+        ElseIf index >= 0.51 And index <= 1.5 Then
             TextBox8.Text = "Intial/ Ad Hoc"
-        ElseIf index <= 2.49 Then
+        ElseIf index >= 1.51 And index <= 2.5 Then
             TextBox8.Text = "Repeatable but Intuitive"
-        ElseIf index <= 3.49 Then
+        ElseIf index >= 2.51 And index <= 3.5 Then
             TextBox8.Text = "Defined Process"
-        ElseIf index <= 4.49 Then
+        ElseIf index >= 3.51 And index <= 4.5 Then
             TextBox8.Text = "Managed And Measurable"
-        ElseIf index <= 5.0 Then
+        ElseIf index >= 4.51 And index <= 5.0 Then
             TextBox8.Text = "Optimized"
         End If
 

@@ -15,3 +15,9 @@ D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\De
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.RID.resources
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.responden.resources
 D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.laporan.resources
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\bin\Debug\AuditTatakelolaSI.exe.config
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.vbprojResolveAssemblyReference.cache
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.vbproj.ResolveComReference.cache
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\Interop.AccessibilityCplAdminLib.dll
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\Interop.CRVIEWERLib.dll
+D:\Job File\Project 1\AuditSistem\AuditTatakelolaSI\AuditTatakelolaSI\obj\x86\Debug\AuditTatakelolaSI.cetak_laporan.resources

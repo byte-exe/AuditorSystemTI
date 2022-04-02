@@ -25,7 +25,6 @@ Public Class RID
                 ComboBox1.Items.Add(rd("kode_responden"))
 
             Loop
-        Else
 
         End If
     End Sub
@@ -37,7 +36,7 @@ Public Class RID
         Dim strSementara As String = ""
         Dim strIsi As String = ""
         Dim str As String
-        str = "SELECT * From data_tata_kelola ORDER BY kode"
+        str = "SELECT * From data_tata_kelola ORDER BY kode desc"
         cmd = New MySqlCommand(str, conn)
         rd = cmd.ExecuteReader
         If rd.Read Then
@@ -79,22 +78,22 @@ Public Class RID
         rata_index.Text = Round(Val(total_index), 2)
         TextBox6.Text = Round(Val(total_index), 2)
         maturity = Round(Val(total_index), 2)
-        If maturity <= 0.49 Then
+        If maturity <= 0.5 Then
             maturity_level.Text = "Non Existent"
             TextBox7.Text = "Non Existent"
-        ElseIf maturity <= 1.49 Then
+        ElseIf maturity >= 0.52 And maturity <= 1.5 Then
             maturity_level.Text = "Intial/ Ad Hoc"
             TextBox7.Text = "Intial/ Ad Hoc"
-        ElseIf maturity <= 2.49 Then
+        ElseIf maturity >= 1.51 And maturity <= 2.5 Then
             maturity_level.Text = "Repeatable but Intuitive"
             TextBox7.Text = "Repeatable but Intuitive"
-        ElseIf maturity <= 3.49 Then
+        ElseIf maturity >= 2.51 And maturity <= 3.5 Then
             maturity_level.Text = "Defined Process"
             TextBox7.Text = "Defined Process"
-        ElseIf maturity <= 4.49 Then
+        ElseIf maturity >= 3.51 And maturity <= 4.5 Then
             maturity_level.Text = "Managed And Measurable"
             TextBox7.Text = "Managed And Measurable"
-        ElseIf maturity <= 5.0 Then
+        ElseIf maturity >= 4.51 And maturity <= 5.0 Then
             maturity_level.Text = "Optimized"
             TextBox7.Text = "Optimized"
         End If
@@ -110,7 +109,7 @@ Public Class RID
         Dim str As String
         Dim tanggal As Date
         tanggal = DateTimePicker1.Value
-        str = "insert into data_tata_kelola value('" & TextBox1.Text & "','" & tanggal & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "')"
+        str = "insert into data_tata_kelola value('" & TextBox1.Text & "','" & tanggal & "','" & ComboBox1.Text & "','" & TextBox2.Text & "','" & indexPO9.Text & "','" & indexAI2.Text & "','" & indexDS5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "')"
         cmd = New MySqlCommand(str, conn)
         rd = cmd.ExecuteReader
         MsgBox("Berhasil Menyimpan Data Audit")
@@ -126,5 +125,13 @@ Public Class RID
 
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
         
+    End Sub
+
+    Private Sub rata_index_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rata_index.TextChanged
+
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+
     End Sub
 End Class

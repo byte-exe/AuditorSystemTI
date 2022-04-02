@@ -109,9 +109,9 @@ Partial Class RID
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(77, 133)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(124, 22)
+        Me.Label5.Size = New System.Drawing.Size(141, 22)
         Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Tanggal Audit"
+        Me.Label5.Text = "Tanggal Analisa"
         '
         'Label4
         '
@@ -139,9 +139,9 @@ Partial Class RID
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(77, 95)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 22)
+        Me.Label2.Size = New System.Drawing.Size(118, 22)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Kode Audit"
+        Me.Label2.Text = "Kode Analisa"
         '
         'Label1
         '
